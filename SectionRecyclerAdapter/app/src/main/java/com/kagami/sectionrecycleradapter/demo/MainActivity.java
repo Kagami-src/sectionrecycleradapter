@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         dataSet=new ArrayList<>();
         for(int i=0;i<100;i++){
             List<String> list=new ArrayList<>();
-            int count=(int)(Math.random()*4);
+            int count=(int)(Math.random()*10);
             //int count=2;
             for(int j=0;j<count;j++){
                 list.add(String.format("item:%d-%d",i,j));
@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         public ItemHolder(View itemView) {
             super(itemView);
             textView=(TextView)itemView;
+            textView.setBackgroundColor(Color.GREEN);
         }
     }
 }
